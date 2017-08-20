@@ -84,7 +84,7 @@ vi create-env.sh
 bosh interpolate ~/github.com/cloudfoundry/bosh-deployment/bosh.yml \
     --state=state.json \
     --vars-store=creds.yml \
-    -o bosh-deployment/vsphere/cpi.yml \
+    -o ~/github.com/cloudfoundry/bosh-deployment/vsphere/cpi.yml \
     -o static-ips.yml \
     -v director_name=bosh-1 \
     -v internal_cidr=10.0.0.0/24 \
