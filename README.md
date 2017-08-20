@@ -18,9 +18,10 @@ This directory structure contains a clone of the [bosh-deployment](https://githu
 
 In this example, ~/deployments/concourse contains the files in this repository.
 
-## Documentation for the release
+## Documentation Links
 
 * [Concourse Bosh Release](https://bosh.io/releases/github.com/concourse/concourse)
+* [Concourse CI bosh cluster documentation](https://concourse.ci/clusters-with-bosh.html)
 
 ## Setup
 
