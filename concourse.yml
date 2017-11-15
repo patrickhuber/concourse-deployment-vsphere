@@ -2,15 +2,19 @@
 name: concourse
 
 releases:
-- name: concourse
-  version: latest
 - name: garden-runc
   version: latest
+  url: https://bosh.io/d/github.com/cloudfoundry/garden-runc-release
+
+- name: concourse
+  version: latest
+  url: https://bosh.io/d/github.com/concourse/concourse
 
 stemcells:
 - alias: trusty
   os: ubuntu-trusty
   version: latest
+  url: https://bosh.io/d/stemcells/bosh-vsphere-esxi-ubuntu-trusty-go_agent
 
 instance_groups:
 - name: web
