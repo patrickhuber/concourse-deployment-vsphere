@@ -6,3 +6,4 @@ db_persistent_disk_type: large
 worker_vm_type: default
 credhub_url: https://192.168.2.1:8844
 web_ip: 192.168.2.0
+deployment_name: concourse

@@ -7,5 +7,5 @@ bosh deploy -d concourse \
      -o submodules/github.com/concourse/concourse-deployment/cluster/operations/privileged-https.yml \
      -o ops-files/basic-auth.yml \
      -o ops-files/atc-tls-variables.yml \
-     -l vars-files/lab.yml \
-     -v deployment_name=concourse
+     -o ops-files/credhub.yml \
+     -l vars-files/lab.yml 
