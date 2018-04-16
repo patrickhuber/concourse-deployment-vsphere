@@ -1,0 +1,16 @@
+---
+- type: replace
+  path: /releases/name=credhub
+  value:
+    name: credhub
+    version: "1.8.3"
+    sha1: 232cf1001e685371fe74c2630fa8115ebaf1f2a7 
+    url: https://bosh.io/d/github.com/pivotal-cf/credhub-release?v=1.8.3
+
+- type: replace
+  path: /releases/name=uaa
+  value: 
+    name: uaa
+    version: "56"
+    sha1: 462383bd04d75ba5a0fd5e205853719b5b78423d 
+    url: https://bosh.io/d/github.com/cloudfoundry/uaa-release?v=56 

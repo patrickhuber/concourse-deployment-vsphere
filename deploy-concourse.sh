@@ -5,6 +5,8 @@ bosh deploy -d concourse \
      -o submodules/github.com/concourse/concourse-deployment/cluster/operations/encryption.yml \
      -o submodules/github.com/concourse/concourse-deployment/cluster/operations/tls.yml \
      -o submodules/github.com/concourse/concourse-deployment/cluster/operations/privileged-https.yml \
+     -o submodules/github.com/pivotalservices/deploy-concourse/credhub/add-credhub.yml \
+     -o ops-files/credhub-releases.yml \
      -o ops-files/basic-auth.yml \
      -o ops-files/atc-tls-variables.yml \
      -o ops-files/credhub.yml \

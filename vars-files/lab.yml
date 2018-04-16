@@ -1,9 +1,12 @@
 external_url: https://192.168.2.0:443
+concourse_fqdn: 192.168.2.0
 network_name: default
 web_vm_type: default
 db_vm_type: default
 db_persistent_disk_type: large
+concourse_db_ip: 192.68.2.21
 worker_vm_type: default
 credhub_url: https://192.168.2.1:8844
 web_ip: 192.168.2.0
+concourse_host: 192.168.2.0
 deployment_name: concourse
