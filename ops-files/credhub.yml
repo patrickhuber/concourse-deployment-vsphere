@@ -1,9 +1,0 @@
-- type: replace
-  path: /instance_groups/name=web/jobs/name=atc/properties/credhub?
-  value:
-    client_id: ((credhub_client_id))
-    client_secret: ((credhub_client_secret))
-    tls:
-      ca_cert: ((credhub_ca))
-    path_prefix: /concourse
-    url: ((credhub_url))
