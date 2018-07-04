@@ -1,0 +1,18 @@
+#!/bin/bash
+DEPLOYMENT=submodules/github.com/concourse/concourse-bosh-deployment
+CLUSTER=$DEPLOYMENT/cluster
+bosh deploy -d concourse $CLUSTER/concourse.yml \
+  -l $DEPLOYMENT/versions.yml \
+  -o $CLUSTER/operations/static-web.yml \
+  -o $CLUSTER/operations/tls.yml \
+  -o operations/tls-vars.yml \
+  -o $CLUSTER/operations/privileged-https.yml \
+  -o $CLUSTER/operations/basic-auth.yml \
+  --var web_ip=192.168.1.203 \
+  --var external_url=https://192.168.1.203:443 \
+  --var network_name=default \
+  --var web_vm_type=default \
+  --var db_vm_type=default \
+  --var db_persistent_disk_type=default \
+  --var worker_vm_type=default \
+  --var deployment_name=concourse
